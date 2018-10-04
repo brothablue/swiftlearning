@@ -13,8 +13,34 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var MyLabel: UILabel!
     
+    @IBOutlet weak var Toptextfield: UITextField!
+    
+    @IBOutlet weak var Bottomtextfield: UITextField!
+    
+    @IBOutlet var additionswitch: UIView!
+    
     @IBAction func Buttonpressed(_ sender: Any) {
         
+        let addition = additionswitch.isUserInteractionEnabled
+        
+        if addition { let sum = Double(Toptextfield.text!)! + Double(Bottomtextfield.text!)!
+            
+            MyLabel.text = "\(Toptextfield.text!) + \(Bottomtextfield.text!) = \(sum)"
+            
+        } else {
+            let sum = Double(Toptextfield.text!)! - Double(Bottomtextfield.text!)!
+            
+            MyLabel.text = "\(Toptextfield.text!) - \(Bottomtextfield.text!) = \(sum)"
+            
+        }
+        
+        
+        
+        
+        
+        
+        /*
+
         buttonCount = buttonCount + 1
         print(buttonCount)
         if buttonCount >= 10 {
@@ -26,7 +52,7 @@ class ViewController: UIViewController {
             view.backgroundColor = UIColor.orange
             MyLabel.text = "Danny is Awesome"
         }
-       
+       */
     }
     override func viewDidLoad() {
         

@@ -48,13 +48,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GN6-xR-bRI">
+                                <rect key="frame" x="163" y="178" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wyO-0o-EYe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0BZ-Ts-Qe7"/>
+                            <constraint firstItem="GN6-xR-bRI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9u9-zO-jCr"/>
                             <constraint firstItem="WJl-2g-oSb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HRh-f1-Gv2"/>
                             <constraint firstItem="1Nf-xY-a2T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OJW-5p-6QP"/>
                             <constraint firstItem="wyO-0o-EYe" firstAttribute="top" secondItem="1Nf-xY-a2T" secondAttribute="bottom" constant="8" id="V3H-Ui-aKA"/>
+                            <constraint firstItem="N6P-c2-WPr" firstAttribute="top" secondItem="GN6-xR-bRI" secondAttribute="bottom" constant="16" id="XHR-cX-jXQ"/>
                             <constraint firstItem="N6P-c2-WPr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="klI-XI-iYs"/>
                             <constraint firstItem="WJl-2g-oSb" firstAttribute="top" secondItem="wyO-0o-EYe" secondAttribute="bottom" constant="19" id="kp5-Al-6VF"/>
                             <constraint firstItem="wyO-0o-EYe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nsQ-xB-0Ys"/>
@@ -63,7 +68,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Bottomtextfield" destination="1Nf-xY-a2T" id="E7y-mf-ACi"/>
                         <outlet property="MyLabel" destination="wyO-0o-EYe" id="nAV-lJ-mUc"/>
+                        <outlet property="Toptextfield" destination="1Nf-xY-a2T" id="TC2-zA-5m6"/>
+                        <outlet property="additionswitch" destination="8bC-Xf-vdC" id="Hbk-1a-39C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
